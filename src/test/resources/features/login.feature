@@ -33,7 +33,7 @@ Feature: Login Test- The user should be able to log in with valid credentials
       | JhonyCash | Test1234 | Welcome JhonyCash |
       | JhonyQ    | Test1234 | Welcome JhonyQ    |
 
-  @wip
+
   Scenario Outline: Negative scenario - The user should NOT be able to log in with invalid credentials
     When The user enters with "<invalidUsername>" and "<invalidPassword>" credentials
     Then The user vefiy that invalid credential "<message>"
