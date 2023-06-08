@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/demoblaze/step_Defs",
         dryRun = false,
-        tags = "@purchase"
+        tags = "@vip"
 
 )
 public class CukesRunner {

@@ -3,7 +3,7 @@ Feature: Login Test- The user should be able to log in with valid credentials
   Background: Go to the store page
     Given The user is on the login page
 
-
+  @vip
   Scenario: Positive Login Test 1
     When The user enters valid credentials
     Then The user verify that Welcome username is displayed
@@ -13,7 +13,7 @@ Feature: Login Test- The user should be able to log in with valid credentials
 #    When The user enters with "JhonyCash" and "Test1234" credentials
 #    Then The user verify that "Welcome JhonyCash" is displayed
 
-  @vip
+
   Scenario Outline: Positive Login Test 3 login with scenario outline
     When The user enters with "<username>" and "<password>" credentials
     Then The user verify that "<WelcomeUsername>" is displayed
